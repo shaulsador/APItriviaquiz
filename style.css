@@ -1,0 +1,225 @@
+body {
+    background-color: #00539CFF;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: #EEA47FFF;
+    width: 100vw;
+    height: 100vh;
+    max-width: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #00539CFF;
+    text-align: center;
+    /* margin-bottom: 1rem; */
+}
+
+h1 {
+    font-size: 5rem;
+    /* font-weight: 200; */
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-color: #00539CFF;
+    margin-top: 2rem;
+    color: #00539CFF;
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #00539CFF;
+    color: #EEA47FFF;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgb(84, 144, 197);
+    transform: translateY(0.1REM);
+    transition: all 0.3s ease;
+}
+
+p {
+    pointer-events: none;
+}
+
+.choices {
+    cursor: pointer;
+}
+
+/* play game */
+.game-container {
+    /* background-color: white; */
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    max-width: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.question-container {
+    /* background-color: #EEA47FFF; */
+    display: flex;
+    flex-direction: column;
+    color: #EEA47FFF;
+    width: 100%;
+}
+
+.question {
+    font-size: 3rem;
+}
+
+.answer-container {
+    width: 100%;
+    margin-top: 3rem;
+    max-width: 60rem;
+}
+
+.letter {
+    pointer-events: none;
+    flex: 0 0 3rem;
+    background-color: #fae57d;
+    border-style: solid;
+    border-color: #cde7f6;
+    color: #00539CFF;
+    padding: 1rem;
+    border-radius: 2rem;
+    /* width: ; */
+}
+
+.choiceDiv .letter:hover {
+    background-color: yellow;
+}
+
+.choiceDiv {
+    /* padding: 1rem; */
+    display: flex;
+    background-color: #EEA47FFF;
+    justify-content: center;
+    align-items: center;
+    color: #00539CFF;
+    font-size: 1.5rem;
+    margin: 0.8rem 0 0.8rem 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 2rem;
+    /* border-color: white; */
+}
+
+.choiceDiv:hover {
+    cursor: pointer;
+    background-color: #4169E1;
+    color: #EEA47FFF;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem #cde7f6;
+    transform: translateY(0.1REM);
+    transition: all 0.3s ease;
+}
+
+.optionDiv {
+    padding: 1rem;
+    flex: 1;
+    pointer-events: none;
+}
+
+.correct, .correct:hover {
+    background-color: yellowgreen;
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+.incorrect, .incorrect:hover {
+    background-color: tomato;
+    opacity: 0.9;
+    text-decoration: line-through;
+}
+
+.question-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    border: 0.3rem solid #EEA47FFF;
+    margin-right: 1rem;
+}
+
+#progressDynamic {
+    /* width: 100%; */
+    height: 100%;
+    background-color: #EEA47FFF;
+}
+
+form {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 1rem;
+}
+
+input {
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 15rem;
+    border: none;
+    box-shadow: 0 0rem 1.4rem 0 rgba(55, 127, 190, 0.8);
+    /* border-radius: 1rem; */
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    background-color: #EEA47FFF;
+    border-width: 3px;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transition: none;
+    background-color: #EEA47FFF;
+    color: #00539CFF;
+    transform: none;
+}
+
+#highscores {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0.7rem;
+}
+
+.eachHighScore {
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.eachHighScore:hover {
+    cursor: text;
+    transform: scale(1.25);
+}
